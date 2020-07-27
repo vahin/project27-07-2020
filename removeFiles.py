@@ -8,7 +8,7 @@ while True:
     if os.path.exists(path):
         for i in os.listdir(path):
             nPath = path+"/"+i
-            if getFileAge(nPath) > 1:
+            if getFileAge(nPath) > 25:
                 askUsr = input("Should I delete this: {} (y/n) ".format(i)).lower()
                 if askUsr == "y":
                     try:
